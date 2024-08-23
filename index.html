@@ -1,136 +1,176 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Restaurant Profile</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Restaurant Profile</title>
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="/Css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/389ba76045.js" crossorigin="anonymous"></script>
 
-    <!-- Custom CSS link -->
-    <link rel="stylesheet" type="text/css" href="/Css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/389ba76045.js" crossorigin="anonymous"></script>
+
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-        <a href="#home" class="logo"><img src="/images/logo-cook--header.svg" alt="Cook Logo"></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <ul class="navbar">
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">Recette de la semaine</a></li>
-            <li><a href="#search">Chercher une recette</a></li>
-            <li><a href="#portfolio">Thèmes</a></li>
-            <li><a href="#contact">Trucs & astuces</a></li>
-        </ul>
-    </header>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <div class="home-text">
-            <h4>De l'apprenti cuisinier au chef étoilé, recherchez parmi plus de 200 recettes de cuisine illustrées en photo ou en vidéo. Des recettes faciles aux astuces et secrets de chefs, renouvelez vos menus et épatez vos proches !</h4>
-            <a href="#" class="btn">TOP DES RECETTES</a>
-        </div>
-    </section>
+	<!---header--->
+	<header>
+		<a href="#home" class="logo"><img src="/images/logo-cook--header.svg"></a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+		<ul class="navbar">
+			<li><a href="#home">Accueil</a></li>
+			<li><a href="#about">Recette de la semaine</a></li>
+			<li><a href="#search">Chercher une recette</a></li>
+			<li><a href="#portfolio">Themes</a></li>
+			<li><a href="#contact">Trucs & astuces</a></li>
+		</ul>
+	</header>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/img-potimarron.jpg" alt="Potimarron Farci">
-        </div>
-        <div class="about-text">
-            <h2>Recette DE LA</h2>
-            <h1>SEMAINE</h1>
-            <p>Recette du 15 au 21 novembre</p>
-            <h4>POTIMARRON FARCI</h4>
-            <p>Potimarron farci avec un mélange de champignons, oignons et lardons, le tout lié avec de la crème et du gruyère râpé, une recette bien réconfortante et rassasiante... Une recette simple et délicieuse que vous pouvez décliner selon vos goûts....</p>
-            <a href="#" class="btn">SEMAINES PASSÉES</a>
-            <a href="#" class="fas fa-arrow-right"></a>
-        </div>
-    </section>
+	<!---home--->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h4>De l'apprenti cuisinier au chef étoilé, recherchez parmi plus de 200 recettes de cuisine illustrées en photo ou en vidéo.
+                
+                Des recettes faciles aux astuces et secrets de chefs, renouvelez vos menus et épatez vos proches !</h4>
+			<a href="#" class="btn">TOP DES RECRTTES</a>
+		</div>
+	</section>
 
-    <!-- Search Section -->
-    <section class="search" id="search">
-        <div class="text-search">
-            <h2>CHERCHER</h2>
-            <h1>UNE RECETTE</h1>
-            <p>Au hasard à partir d’un ingrédient</p>
-        </div>
-        <form>
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Ingrédient...">
-            <button type="submit">CHERCHER</button>
-        </form>
-    </section>
+	<!---about--->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="images/img-potimarron.jpg">
+		</div>
 
-    <!-- Portfolio Section -->
+		<div class="about-text">
+			<h2>Recette DE LA</h2>
+			<h1>SEMAINE</h1>
+			<p>recette du 15 au 21 novembre</p>
+			<h4>POTIMARRON FARCI</h4>
+			<p>Potimarron farci avec un mélange de champignons, oignons et lardons, le tout lié avec de la crème et du gruyère râpé, une recette bien réconfortante et rassasiante...
+				Une recette simple et délicieuse que vous pouvez décliner selon vos goûts....
+			</p>
+			<a href="#" class="btn">SEMAINES PASSEES</a>
+			<a href="#" class='fas fa-arrow-right'></a>
+		</div>
+	</section>
+
+	<!---search--->
+	<section class="search" id="search">
+		<div class="text-search">
+			<h2>CHERCHER</h2>
+			<h1>UNE RECETTE</h1>
+			<P>au hasard à partir d’un ingrédient</P>
+		</div>
+		<form>
+			<i class="fas fa-search"></i>
+			<input type="Text" placeholder="Ingredient...">
+			<button type="submit">CHERCHER</button>
+		</form>
+	</section>
+	<!---portfolio--->
     <section class="portfolio" id="portfolio">
-        <div class="main-text">
-            <h2>RECETTE PAR</h2>
-            <h4>Quelque soit votre idée, vous trouverez forcément parmi nos meilleures recettes de quoi réaliser le menu idéal !</h4>
-        </div>
-        <div class="portfolio-content">
-            <div class="row">
-                <img src="/images/theme-1.jpg" alt="Petit-Déjeuner">
-                <div class="main-row">
-                    <div class="row-icon">
-                        <i class="bx bx-heart"></i>
-                    </div>
-                </div>
-                <h3>PETIT-DÉJEUNER</h3>
-            </div>
-            <div class="row">
-                <img src="/images/theme-2.jpg" alt="Recettes Végétariennes">
-                <div class="main-row">
-                    <div class="row-icon">
-                        <i class="bx bx-heart"></i>
-                    </div>
-                </div>
-                <h3>RECETTES VÉGÉTARIENNES</h3>
-            </div>
-            <div class="row">
-                <img src="/images/theme-3.jpg" alt="Pizzas">
-                <div class="main-row">
-                    <div class="row-icon">
-                        <i class="bx bx-heart"></i>
-                    </div>
-                </div>
-                <h3>PIZZAS</h3>
-            </div>
-        </div>
-    </section>
+		<div class="main-text">
+			<h2>RECETTE PAR</h2>
+			<h4>Quelque soit votre idée, vous trouverez forcément parmi nos meilleures recettes de quoi réaliser le menu idéal !</h4>
+		</div>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <a href="#" class="footer-logo"><img src="/images/logo-cook--footer.svg" alt="Cook Footer Logo"></a>
-        <div class="contact-text">
-            <h2>CONTACTEZ-NOUS</h2>
-            <div class="contact-list">
-                <li><a href="tel:0299123456">02 99 12 34 56</a></li>
-                <li><a href="#">3 Pl. du Général-Giraud</a></li>
-                <li><a href="#">35000 Rennes</a></li>
-            </div>
-            <div class="contact-icons">
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-youtube"></i></a>
-                <a href="#"><i class="bx bxl-instagram"></i></a>
-                <a href="#"><i class="bx bxl-pinterest"></i></a>
-            </div>
-        </div>
-    </section>
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="/images/theme-1.jpg">
+				<div class="main-row">
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+			<h3>PETIT-DEJEUNER</h3>
+		</div>
 
-    <div class="last-text">
-        <p>Mentions légales - © 2023 Cook’n’Crunch - DC1 - Nom Prénom</p>
-    </div>
+		<div class="row">
+			<img src="/images/theme-2.jpg">
+			<div class="main-row">
+				<div class="row-icon">
+					<i class='bx bx-heart'></i>
+				</div>
+			</div>
+			<h3>RECETTES VEGETARIENNES</h3>
+		</div>
 
-    <!-- Scroll to Top -->
-    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+		<div class="row">
+			<img src="/images/theme-3.jpg">
+			<div class="main-row">
+				<div class="row-icon">
+					<i class='bx bx-heart'></i>
+				</div>
+			</div>
+			<h3>PIZZAS</h3>
+		</div>
 
-    <!-- Custom JS link -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script type="text/javascript" src="/JS/Script.js"></script>
+		<div class="row">
+			<img src="/images/theme-4.jpg">
+			<div class="main-row">
+				<div class="row-icon">
+					<i class='bx bx-heart'></i>
+				</div>
+			</div>
+			<h3>PIZZAS</h3>
+		</div>
+
+		<!---<div class="row">
+			<img src="img/portfolio5.jpg">
+			<div class="main-row">
+				<div class="row-icon">
+					<i class='bx bx-heart'></i>
+				</div>
+			</div>
+			<h3>Discription</h3>
+		</div>
+
+		<div class="row">
+			<img src="img/portfolio6.jpg">
+			<div class="main-row">
+				<div class="row-icon">
+					<i class='bx bx-heart'></i>
+				</div>
+			</div>
+			<h3>Discription</h3>
+		</div>--->
+	</div>
+</section>
+<!---contact--->
+<section class="contact" id="contact">
+	<a href="#" class="footer-logo"><img src="/images/logo-cook--footer.svg"></a>
+	<div class="contact-text">
+		<h2>CONTACTEZ NOUS</h2>
+		<div class="contact-list">
+			<li><a href="#">02 99 12 34 56</a></li>
+			<li><a href="#">3 Pl. du Général-Giraud</a></li>
+			<li><a href="#">35000 Rennes </a></li>
+		</div>
+		<div class="contact-icons">
+			<a href="#"><i class='bx bxl-facebook' ></i></a>
+			<a href="#"><i class='bx bxl-youtube' ></i></a>
+			<a href="#"><i class='bx bxl-instagram' ></i></a>
+			<a href="#"><i class='bx bxl-pinterest' ></i></a>
+		</div>
+	</div>
+</section>
+
+<div class="last-text">
+	<p>Mentions légales - © 2023 Cook’n’Crunch - DC1 - Nom Prénom</p>
+</div>
+	
+
+	<!---scroll-top--->
+	<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!---custom js link--->
+	<script type="text/javascript" src="/JS/Script.js"></script>
+
 </body>
-
 </html>
