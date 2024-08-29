@@ -23,6 +23,13 @@ const sr = ScrollReveal ({
 	reset: true
 })
 
+navbar.querySelectorAll('a').forEach(link => {
+	link.onclick = () => {
+		menu.classList.remove('bx-x');
+		navbar.classList.remove('active');
+	};
+});
+
 sr.reveal('.home-text',{delay:190, origin:'bottom'})
 
 sr.reveal('.about,.search,.portfolio,.contact',{delay:200, origin:'bottom'})
