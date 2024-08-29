@@ -52,9 +52,9 @@ header{
 	border-radius: 0.5rem;
 	transition: all .40s ease;
 }
-.navbar a:hover{
-	background: var(#000000);
-	color: var(--text-color);
+.navbar a:hover {
+	background: var(--second-color);
+	color: var(--bg-color);
 }
 #menu-icon{
 	font-size: 36px;
@@ -166,183 +166,259 @@ header.sticky{
 	font-weight: 600;
 }
 
-.search{
-	height: 50vh;
-	width: 100%;
-	position: relative;
-	background: url(/images/bg-search.jpg);
-	background-size: cover;
-	background-position: center;
-}
-.text-search{
-	text-align: center;
-}
-.text-search h2{
-	text-align: center;
-	color: #000000;
-}
-.text-search h1{
-	text-align: center;
-	color: #00C38A;
-}
-.text-search p{
-	text-align: center;
-	margin-bottom: 1rem;
-}
-form{
-	background: #FFFF;
-	width: 600px;
-	height: 55px;
-	display: flex;
-	box-shadow: 1.5px 1.5px 1.5px 1.5px #00C38A;
-}
-form input{
-	flex: 1;
-	width: 100%;
-	border: none;
-	outline: none;
-	color: #00C38A;
-	align-self: auto;
-}
-form button{
-	background: #00C38A;
-	padding: 10px 50px;
-	border: #00C38A;
-	outline: #00C38A;
-	shape-outside: #00C38A;
-	color: #FFFF;
-	letter-spacing: 1px;
-	cursor: pointer;
-}
-form .fa-search{
-	align-self: center;
-	padding: 10px 20px;
-	color: #00C38A;
+.search {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    background: url('/images/bg-search.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.portfolio-content{
+.text-search {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.text-search h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text-search h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00C38A;
+    margin: 10px 0;
+}
+
+.text-search p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #FFF;
+}
+
+form {
+    background: #FFFFFF;
+    width: 100%;
+    max-width: 600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 195, 138, 0.5);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+form button {
+    background: #00C38A;
+    border: none;
+    padding: 20px 30px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #00996E;
+}
+
+form .fa-search {
+    padding: 0 20px;
+    color: #00C38A;
+    font-size: 1.2rem;
+}
+
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: stretch;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.row {
+    padding: 20px;
+    background: #00C38A;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.row img {
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.row h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.row-icon i {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.row:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #019970;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	grid-template-columns: 1fr;
 	align-items: center;
+	justify-items: center;
 	gap: 2rem;
-	margin-top: 5rem;
+	background-color: #dbdcdd;
+	padding: 2rem;
+	text-align: center;
 }
-.row img{
+
+.contact .footer-logo img {
+	width: 150px;
 	height: auto;
-	width: 100%;
-	border-radius: 0.5rem;
-	margin-bottom: 1.5rem;
 }
-.row{
-	padding: 25px;
-	background: #00C38A;
-	border-radius: 0.5rem;
-	transition: all .40s ease;
-}
-.main-row{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+
+.contact-text h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--main-color);
 	margin-bottom: 1rem;
 }
-.row h3{
-	font-size: 25px;
-	font-weight: 700;
-}
-.row h6{
-	color: var(#000000);
-	font-size: 16px;
-	font-weight: 500;
-	letter-spacing: 1px;
-}
-.row-icon i{
-	font-size: 21px;
-}
-.row:hover{
-	transform: scale(1.01) translateY(-5px);
-	cursor: pointer;
+
+.contact-list {
+	list-style: none;
+	padding: 0;
+	margin: 2rem 0;
 }
 
-.contact{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	gap: 3rem;
-	background-color: #dbdcdd;
-}
-.contact .footer-logo img{
-	width: auto;
-	height: auto;
-	align-items: left;
+.contact-list li {
+	margin-bottom: 1rem;
 }
 
-.contact-text h2{
-	font-size: var(--h2-font);
-	font-size: 30px;
-	text-align: start;
-	margin-inline-start: 1px;
-}
-
-.contact-list{
-	margin-bottom: 3rem;
-	margin-top: 2rem;
-}
-.contact-list li{
-	margin-bottom: 10px;
-	display: block;
-
-}
-.contact-list li a{
-	display: block;
-	color: var(--second-color);
-	font-size: var(--p-font);
+.contact-list li a {
+	color: var(--text-color);
+	font-size: 1rem;
 	font-weight: 600;
-	transition: all .40s ease;
+	transition: all 0.4s ease;
 }
-.contact-list li a:hover{
-	transform: scale(1.01) translateY(-5px);
-	color: var(--main-color);
+
+.contact-list li a:hover {
+	color: #12141c;
+	transform: scale(1.05);
 }
-.contact-icons i{
-	height: 40px;
-	width: 40px;
-	background: #12141c;
-	border-radius: 0.5rem;
-	color: var(--main-color);
-	display: inline-flex;
+
+.contact-icons {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.contact-icons a {
+	text-decoration: none;
+}
+
+.contact-icons i {
+	height: 50px;
+	width: 50px;
+	background: var(--main-color);
+	border-radius: 50%;
+	color: #fff;
+	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 18px;
-	margin-right: 10px;
-	transition: all .40s ease;
-	align-content: right;
-}
-.contact-icons i:hover{
-	transform: scale(1.01) translateY(-5px);
-	color: var(--text-color);
-	background: var(--main-color);
+	font-size: 24px;
+	transition: all 0.4s ease;
 }
 
-.last-text p{
-	text-align: center;
-	padding: 15px;
-	color: var(--second-color);
-	font-size: 15px;
-	font-weight: 600;
-	letter-spacing: 1px;
+.contact-icons i:hover {
+	background: #019970;
+	transform: scale(1.1);
 }
-.top{
-	position: fixed;
-	bottom: 2.1rem;
-	right: 2.1rem;
+
+
+.last-text {
+    background-color: #f8f9fa; 
+    padding: 20px 0; 
 }
-.top i{
-	color: var(--text-color);
-	background: var(--main-color);
-	font-size: 20px;
-	padding: 10px;
-	border-radius: 0.5rem;
+
+.last-text p {
+    text-align: center;
+    padding: 15px;
+    color: var(--second-color);
+    font-size: 14px; 
+    font-weight: 500; 
+    letter-spacing: 1px;
+    line-height: 1.6; 
+    margin: 0; 
+    text-transform: uppercase; 
+    border-top: 1px solid var(--second-color); 
+    border-bottom: 1px solid var(--second-color);
 }
+
+.top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 1000; /* Ensures the button is above other content */
+}
+
+.top:hover {
+    background: var(--text-color);
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+
+.top i {
+    font-size: 24px;
+}
+
+/* Optional: Add animation for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 
 @media (max-width: 1325px){
 	header{
